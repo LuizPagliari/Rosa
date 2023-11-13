@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const simButton = document.getElementById("sim");
 
     simButton.addEventListener("click", function () {
-        alert("Caiu no meu papinho, ih já era");
+        alert("Agora você é minha, aceitou, já era!");
     });
 
     naoButton.addEventListener("click", function () {
@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
         naoButton.style.left = randLeft + "px";
     });
 });
+
