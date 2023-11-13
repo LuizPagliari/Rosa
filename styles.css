@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
 }
 
 .buttons {
@@ -45,4 +46,35 @@
     color: #333333;
     transition: all 200ms;
     z-index: 1000;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url('img/images.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: translateY(0) rotate(0) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.fireworks {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000; /* Cor dos fogos de artifício */
+    border-radius: 50%;
+    animation: fireworks 5s ease-out;
 }
